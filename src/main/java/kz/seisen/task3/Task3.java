@@ -6,7 +6,7 @@ public class Task3 {
 
     public static void main(String[] args) {
 
-        List<String> data = List.of("  10  ", "23", "  ", "abc", " 42 ", "100");
+        List<String> data = List.of("32  ", "2322", "  ", "dias", " 67", " 1 ", "43");
 
         int sum = data.stream()
                 .map(Steps.trim())               // Function

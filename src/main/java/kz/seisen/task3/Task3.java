@@ -1,0 +1,22 @@
+package kz.seisen.task3;
+
+import java.util.List;
+
+public class Task3 {
+
+    public static void main(String[] args) {
+
+        List<String> data = List.of("  10  ", "23", "  ", "abc", " 42 ", "100");
+
+        int sum = data.stream()
+                .map(Steps.trim())               // Function
+                .filter(Filters.notEmpty())      // Predicate
+                .filter(Filters.isNumber())      // Predicate (защита от ошибок)
+                .map(Steps.toInt())              // Function
+                .filter(Filters.even())          // Predicate
+                .mapToInt(Integer::intValue)     // агрегация
+                .sum();
+
+        System.out.println(sum); // 152
+    }
+}

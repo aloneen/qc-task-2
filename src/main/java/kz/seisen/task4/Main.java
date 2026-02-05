@@ -2,7 +2,7 @@ package kz.seisen.task4;
 
 import java.util.Map;
 
-public class Task4 {
+public class Main {
 
     public static void main(String[] args) {
 

@@ -2,7 +2,7 @@ package kz.seisen.task5;
 
 import java.util.List;
 
-public class Task5 {
+public class Main {
 
     public static void main(String[] args) {
 
